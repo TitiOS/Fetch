@@ -41,9 +41,9 @@ A API Fetch fornece uma interface JavaScript para acessar e manipular partes do 
 A sintaxe do ```fetch``` é bastante simples:
 
 ``` javascript
-let url = `https://bible-api.com/?random=verse&translation=${translation}`
-let response = await fetch(url)
-data = await response.json()
+const url = 'https://api.adviceslip.com/advice';
+const response = await fetch(url);
+const data = await response.json();
 ```
 
 Veja que construímos a URL de acordo com a documentação da API e a passamos como parâmetro para o método ```fetch```. Caso necessário, é possível ainda passar um segundo parâmetro que é um objeto com as propriedades adicionais. Por padrão, o método é o GET e não há nenhuma outra propriedade adicional.
