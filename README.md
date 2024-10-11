@@ -46,11 +46,11 @@ const response = await fetch(url);
 const data = await response.json();
 ```
 
-Veja que construímos a URL de acordo com a documentação da API e a passamos como parâmetro para o método ```fetch```. Caso necessário, é possível ainda passar um segundo parâmetro que é um objeto com as propriedades adicionais. Por padrão, o método é o GET e não há nenhuma outra propriedade adicional.
+Observe que criamos a URL seguindo as orientações da documentação da API e a utilizamos como argumento no método fetch. Se for preciso, pode-se incluir um segundo argumento, que é um objeto contendo propriedades adicionais. Por padrão, o método utilizado é o GET e não há outras propriedades extras.
 
-Note a necessidade da palavra reservada ```await``` para indicar que é necessário esperar a solução do método para continuar a execução do código.
+Perceba que o uso da palavra-chave await é indispensável, pois indica que o código precisa aguardar a resolução do método antes de seguir em frente.
 
-Por fim, conformamos o corpo desta resposta ao padrão JSON usando o método ```json()```que também é assíncrono e, por isso deve ser precedido da palavra ```await```também.
+Por último, convertemos o corpo da resposta para o formato JSON utilizando o método json(), que também é assíncrono, necessitando, portanto, do uso do await.
 
 ## Resultado visual
 
