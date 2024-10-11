@@ -46,7 +46,7 @@ const response = await fetch(url);
 const data = await response.json();
 ```
 
-Criamos a URL seguindo as orientações da documentação da API e a utilizamos como argumento no método fetch. Caso necessário, podemos incluir um segundo parâmetro, contendo propriedades adicionais. Utilizamos o método GET por ser o padrão.
+Criamos a URL seguindo as orientações da documentação da API e a utilizamos como parâmetro no método fetch. Caso necessário, podemos incluir um segundo parâmetro, contendo propriedades adicionais. Utilizando o método GET por ser o padrão.
 
 Perceba que o uso da palavra-chave await é indispensável, pois indica que o código precisa aguardar a resolução do método antes de seguir em frente.
 
