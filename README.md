@@ -38,7 +38,7 @@ async function getRandomAdvice() {
 ```
 A API Fetch fornece uma interface JavaScript para acessar e manipular partes do pipeline HTTP, tais como os pedidos e respostas. Ela também fornece o método global fetch() que fornece uma maneira fácil e lógica para buscar recursos de forma **assíncrona** através da rede.
 
-A sintaxe do ```fetch``` é bastante simples:
+A sintaxe do ```fetch```:
 
 ``` javascript
 const url = 'https://api.adviceslip.com/advice';
@@ -48,9 +48,9 @@ const data = await response.json();
 
 Criamos a URL seguindo as orientações da documentação da API e a utilizamos como parâmetro no método fetch. Caso necessário, podemos incluir um segundo parâmetro, contendo propriedades adicionais. Utilizando o método GET por ser o padrão.
 
-Perceba que o uso da palavra-chave await é indispensável, pois indica que o código precisa aguardar a resolução do método antes de seguir em frente.
+await indica que o código precisa aguardar a resolução do método antes de seguir em frente.
 
-Por último, convertemos o corpo da resposta para o formato JSON utilizando o método json(), que também é assíncrono, necessitando, portanto, do uso do await.
+Por último, convertemos o corpo da resposta para o formato JSON utilizando o método json(), que também é assíncrono, necessitando do uso do await.
 
 ## Resultado visual
 
