@@ -36,9 +36,7 @@ async function getRandomAdvice() {
     }
 }
 ```
-No javascript, o ```fetch```é o método utilizado para buscar dados de uma página ou arquivo de forma assíncrona. Ele recebe a url desejada (como a do exemplo acima) e faz uma requisição. A resposta dessa requisição segue o protocolo HTTP e pode ser interpretada pelo código principal.
-
-É importante ressaltar que o fetch é um método **assíncrono**, o que significa que ele busca a requisição em paralelo à execução do restante do código principal. Portanto é necessário tratar o seu retorno, sabendo que a requisição pode ou não ser bem sucedida.
+A API Fetch fornece uma interface JavaScript para acessar e manipular partes do pipeline HTTP, tais como os pedidos e respostas. Ela também fornece o método global fetch() que fornece uma maneira fácil e lógica para buscar recursos de forma **assíncrona** através da rede.
 
 A sintaxe do ```fetch``` é bastante simples:
 
@@ -55,6 +53,6 @@ Note a necessidade da palavra reservada ```await``` para indicar que é necessá
 Por fim, conformamos o corpo desta resposta ao padrão JSON usando o método ```json()```que também é assíncrono e, por isso deve ser precedido da palavra ```await```também.
 
 ## Resultado visual
-O código presente neste repositório, quando executado em um navegador apresenta o versículo no centro da página, como mostra a imagem a seguir:
 
-![Exemplo de apresentação do versículo](exemplo.png)
+![image](https://github.com/user-attachments/assets/40c98b87-e090-4ac1-ace3-5e4b2607be55)
+
